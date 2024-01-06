@@ -1,0 +1,4058 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { line-height:115%; font-family:Cambria; font-size:11pt }
+			h1, h2, h3, h4, h5, h6, p { margin:0pt 0pt 10pt }
+			li, table { margin-top:0pt; margin-bottom:10pt }
+			h1 { margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:14pt; font-weight:bold; color:#365f91 }
+			h2 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:13pt; font-weight:bold; color:#4f81bd }
+			h3 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:11pt; font-weight:bold; color:#4f81bd }
+			h4 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:11pt; font-weight:bold; font-style:italic; color:#4f81bd }
+			h5 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:11pt; font-weight:normal; color:#243f60 }
+			h6 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:11pt; font-weight:normal; font-style:italic; color:#243f60 }
+			.Heading7 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:11pt; font-weight:normal; font-style:italic; color:#404040 }
+			.Heading8 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:10pt; font-weight:normal; color:#4f81bd }
+			.Heading9 { margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:10pt; font-weight:normal; font-style:italic; color:#404040 }
+			.BodyText { margin-bottom:6pt; line-height:115%; font-size:11pt }
+			.BodyText2 { margin-bottom:6pt; line-height:200%; font-size:11pt }
+			.BodyText3 { margin-bottom:6pt; line-height:115%; font-size:8pt }
+			.Caption { margin-bottom:10pt; line-height:normal; font-size:9pt; font-weight:bold; color:#4f81bd }
+			.Footer { margin-bottom:0pt; line-height:normal; font-size:11pt }
+			.Header { margin-bottom:0pt; line-height:normal; font-size:11pt }
+			.IntenseQuote { margin:10pt 46.8pt 14pt; line-height:115%; border-bottom:0.75pt solid #4f81bd; padding-bottom:4pt; font-size:11pt; font-weight:bold; font-style:italic; color:#4f81bd }
+			.List { margin-left:18pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.List2 { margin-left:36pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.List3 { margin-left:54pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.ListBullet { margin-left:18pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.ListBullet2 { margin-left:36pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.ListBullet3 { margin-left:54pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.ListContinue { margin-left:18pt; margin-bottom:6pt; line-height:115%; font-size:11pt }
+			.ListContinue2 { margin-left:36pt; margin-bottom:6pt; line-height:115%; font-size:11pt }
+			.ListContinue3 { margin-left:54pt; margin-bottom:6pt; line-height:115%; font-size:11pt }
+			.ListNumber { margin-left:18pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.ListNumber2 { margin-left:36pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.ListNumber3 { margin-left:54pt; margin-bottom:10pt; text-indent:-18pt; line-height:115%; font-size:11pt }
+			.ListParagraph { margin-left:36pt; margin-bottom:10pt; line-height:115%; font-size:11pt }
+			.Macro { margin-bottom:10pt; line-height:115%; font-family:Courier; font-size:10pt }
+			.NoSpacing { margin-bottom:0pt; line-height:normal; font-size:11pt }
+			.Quote { margin-bottom:10pt; line-height:115%; font-size:11pt; font-style:italic; color:#000000 }
+			.Subtitle { margin-bottom:10pt; line-height:115%; font-family:Calibri; font-size:12pt; font-style:italic; letter-spacing:0.75pt; color:#4f81bd }
+			.TOCHeading { margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Calibri; font-size:14pt; font-weight:bold; color:#365f91 }
+			.Title { margin-bottom:15pt; line-height:normal; border-bottom:1pt solid #4f81bd; padding-bottom:4pt; font-family:Calibri; font-size:26pt; letter-spacing:0.25pt; color:#17365d }
+			span.BookTitle { font-weight:bold; font-variant:small-caps; letter-spacing:0.25pt }
+			span.CytatZnak { font-style:italic; color:#000000 }
+			span.CytatintensywnyZnak { font-weight:bold; font-style:italic; color:#4f81bd }
+			span.Emphasis { font-style:italic }
+			span.IntenseEmphasis { font-weight:bold; font-style:italic; color:#4f81bd }
+			span.IntenseReference { font-weight:bold; font-variant:small-caps; text-decoration:underline; letter-spacing:0.25pt; color:#c0504d }
+			span.Nagwek1Znak { font-family:Calibri; font-size:14pt; font-weight:bold; color:#365f91 }
+			span.Nagwek2Znak { font-family:Calibri; font-size:13pt; font-weight:bold; color:#4f81bd }
+			span.Nagwek3Znak { font-family:Calibri; font-weight:bold; color:#4f81bd }
+			span.Nagwek4Znak { font-family:Calibri; font-weight:bold; font-style:italic; color:#4f81bd }
+			span.Nagwek5Znak { font-family:Calibri; color:#243f60 }
+			span.Nagwek6Znak { font-family:Calibri; font-style:italic; color:#243f60 }
+			span.Nagwek7Znak { font-family:Calibri; font-style:italic; color:#404040 }
+			span.Nagwek8Znak { font-family:Calibri; font-size:10pt; color:#4f81bd }
+			span.Nagwek9Znak { font-family:Calibri; font-size:10pt; font-style:italic; color:#404040 }
+			span.PodtytuZnak { font-family:Calibri; font-size:12pt; font-style:italic; letter-spacing:0.75pt; color:#4f81bd }
+			span.Strong { font-weight:bold }
+			span.SubtleEmphasis { font-style:italic; color:#808080 }
+			span.SubtleReference { font-variant:small-caps; text-decoration:underline; color:#c0504d }
+			span.TekstmakraZnak { font-family:Courier; font-size:10pt }
+			span.Tekstpodstawowy3Znak { font-size:8pt }
+			span.TytuZnak { font-family:Calibri; font-size:26pt; letter-spacing:0.25pt; color:#17365d }
+		</style>
+	</head>
+	<body>
+			<table style="margin-bottom:0pt; border:0.75pt solid #000000; border-collapse:collapse">
+				<tr>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							ROZPORZĄDZENIE
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							MINISTRA INFRASTRUKTURY 1
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							z dnia 12 kwietnia 2002 r.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Na podstawie art. 7 ust. 2 pkt 1 2&#xa0; ustawy z dnia 7 lipca 1994 r. - Prawo budowlane (Dz. U. z 2021 r. poz. 2351 oraz z 2022 r. poz. 88) zarządza się, co następuje:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="12" style="width:421.2pt; border-top:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							Dział&#xa0; I
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Przepisy ogólne
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 1.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Zakres rozporządzenia] Rozporządzenie ustala warunki techniczne, jakim powinny odpowiadać budynki i związane z nimi urządzenia, ich usytuowanie na działce budowlanej oraz zagospodarowanie działek przeznaczonych pod zabudowę, zapewniające spełnienie wymagań art. 5 i 6 ustawy z dnia 7 lipca 1994 r. - Prawo budowlane.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="11" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 2.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Stosowanie przepisów rozporządzenia]
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Przepisy rozporządzenia stosuje się przy projektowaniu, budowie i przebudowie oraz przy zmianie sposobu użytkowania budynków oraz budowli nadziemnych i podziemnych spełniających funkcje użytkowe budynków, a także do związanych z nimi urządzeń budowlanych, z zastrzeżeniem § 135 ust. 10 oraz § 207 ust. 2.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="4" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Przy nadbudowie, rozbudowie, przebudowie i zmianie sposobu użytkowania:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budynków o powierzchni użytkowej nieprzekraczającej 1000 m2 ,
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="2" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budynków o powierzchni użytkowej przekraczającej 1000 m2 , o których mowa w art. 5 ust. 7 pkt 1-4 i 6 3&#xa0; ustawy z dnia 7 lipca 1994 r. - Prawo budowlane
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							- wymagania, o których mowa w § 1, mogą być spełnione w sposób inny niż określony w rozporządzeniu, stosownie do wskazań ekspertyzy technicznej właściwej jednostki badawczo-rozwojowej albo rzeczoznawcy budowlanego oraz do spraw zabezpieczeń przeciwpożarowych, uzgodnionych z właściwym komendantem wojewódzkim Państwowej Straży Pożarnej lub państwowym wojewódzkim inspektorem sanitarnym, odpowiednio do przedmiotu tej ekspertyzy.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							(uchylony).
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3a.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Przy nadbudowie, rozbudowie, przebudowie i zmianie sposobu użytkowania budynków istniejących o powierzchni użytkowej przekraczającej 1000 m2 wymagania, o których mowa w § 1, z wyłączeniem wymagań charakterystyki energetycznej, mogą być spełnione w sposób inny niż określony w rozporządzeniu, stosownie do wskazań, o których mowa w ust. 2, uzgodnionych z właściwym komendantem wojewódzkim Państwowej Straży Pożarnej lub państwowym wojewódzkim inspektorem sanitarnym, odpowiednio do przedmiotu tej ekspertyzy.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Dla budynków i terenów wpisanych do rejestru zabytków lub obszarów objętych ochroną konserwatorską na podstawie ustaleń miejscowego planu zagospodarowania przestrzennego ekspertyza, o której mowa w ust. 2, podlega również uzgodnieniu z wojewódzkim konserwatorem zabytków.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							5.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Przepisy rozporządzenia odnoszące się do budynku o określonym przeznaczeniu stosuje się także do każdej części budynku o tym przeznaczeniu.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							6.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							(uchylony).
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="9" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 3.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Definicje legalne] Ilekroć w rozporządzeniu jest mowa o:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							zabudowie śródmiejskiej - należy przez to rozumieć zgrupowanie intensywnej zabudowy na obszarze śródmieścia, określonej w miejscowym planie zagospodarowania przestrzennego, a w przypadku braku planu miejscowego w studium uwarunkowań i kierunków zagospodarowania przestrzennego gminy;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1a)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							działce budowlanej - należy przez to rozumieć nieruchomość gruntową lub działkę gruntu, której wielkość, cechy geometryczne, dostęp do drogi publicznej oraz wyposażenie w urządzenia infrastruktury technicznej spełniają wymogi realizacji obiektów budowlanych wynikające z rozporządzenia, odrębnych przepisów i aktów prawa miejscowego;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							zabudowie jednorodzinnej - należy przez to rozumieć jeden budynek mieszkalny jednorodzinny lub zespół takich budynków, wraz z budynkami garażowymi i gospodarczymi;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							zabudowie zagrodowej - należy przez to rozumieć w szczególności budynki mieszkalne, budynki gospodarcze lub inwentarskie w rodzinnych gospodarstwach rolnych, hodowlanych lub ogrodniczych oraz w gospodarstwach leśnych;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="3" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budynku mieszkalnym - należy przez to rozumieć:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							a)
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budynek mieszkalny wielorodzinny,
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							b)
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budynek mieszkalny jednorodzinny;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							5)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budynku zamieszkania zbiorowego - należy przez to rozumieć budynek przeznaczony do okresowego pobytu ludzi, w szczególności hotel, motel, pensjonat, dom wypoczynkowy, dom wycieczkowy, schronisko młodzieżowe, schronisko, internat, dom studencki, budynek koszarowy, budynek zakwaterowania na terenie zakładu karnego, aresztu śledczego, zakładu poprawczego, schroniska dla nieletnich, a także budynek do stałego pobytu ludzi, w szczególności dom dziecka, dom rencistów i dom zakonny;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="3" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 4.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Pomieszczenia przeznaczone na pobyt ludzi] Pomieszczenia przeznaczone na pobyt ludzi dzielą się na:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							pomieszczenia przeznaczone na stały pobyt ludzi, w których przebywanie tych samych osób w ciągu doby trwa dłużej niż 4 godziny;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							pomieszczenia przeznaczone na czasowy pobyt ludzi, w których przebywanie tych samych osób w ciągu doby trwa od 2 do 4 godzin włącznie.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="6" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 5.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Pomieszczenia nieprzeznaczone na pobyt ludzi]
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="4" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Nie uważa się za przeznaczone na pobyt ludzi pomieszczeń, w których:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							łączny czas przebywania tych samych osób jest krótszy niż 2 godziny w ciągu doby, a wykonywane czynności mają charakter dorywczy bądź też praca polega na krótkotrwałym przebywaniu związanym z dozorem oraz konserwacją maszyn i urządzeń lub utrzymaniem czystości i porządku;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							mają miejsce procesy technologiczne niepozwalające na zapewnienie warunków przebywania osób stanowiących ich obsługę, bez zastosowania indywidualnych urządzeń ochrony osobistej i zachowania specjalnego reżimu organizacji pracy;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							jest prowadzona hodowla roślin lub zwierząt, niezależnie od czasu przebywania w nich osób zajmujących się obsługą.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Przepis ust. 1 nie narusza przepisów dotyczących bezpieczeństwa i higieny pracy.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 6.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Sposób mierzenia wysokości budynku] Wysokość budynku, służącą do przyporządkowania temu budynkowi odpowiednich wymagań rozporządzenia, mierzy się od poziomu terenu przy najniżej położonym wejściu do budynku lub jego części, znajdującym się na pierwszej kondygnacji nadziemnej budynku, do górnej powierzchni najwyżej położonego stropu, łącznie z grubością izolacji cieplnej i warstwy ją osłaniającej, bez uwzględniania wyniesionych ponad tę płaszczyznę maszynowni dźwigów i innych pomieszczeń technicznych, bądź do najwyżej położonego punktu stropodachu lub konstrukcji przekrycia budynku znajdującego się bezpośrednio nad pomieszczeniami przeznaczonymi na pobyt ludzi.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 7.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							(uchylony).
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="5" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 8.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Podział budynków na grupy wysokości] W celu określenia wymagań technicznych i użytkowych wprowadza się następujący podział budynków na grupy wysokości:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							niskie (N) - do 12 m włącznie nad poziomem terenu lub mieszkalne o wysokości do 4 kondygnacji nadziemnych włącznie;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							średniowysokie (SW) - ponad 12 m do 25 m włącznie nad poziomem terenu lub mieszkalne o wysokości ponad 4 do 9 kondygnacji nadziemnych włącznie;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							wysokie (W) - ponad 25 m do 55 m włącznie nad poziomem terenu lub mieszkalne o wysokości ponad 9 do 18 kondygnacji nadziemnych włącznie;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							wysokościowe (WW) - powyżej 55 m nad poziomem terenu.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="6" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 9.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Wymiary wymagane w rozporządzeniu]
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Wymagane w rozporządzeniu wymiary należy rozumieć jako uzyskane z uwzględnieniem wykończenia powierzchni elementów budynku, a w odniesieniu do szerokości drzwi - jako wymiary w świetle ościeżnicy.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Grubość skrzydła drzwi po otwarciu nie może pomniejszać wymiaru szerokości otworu w świetle ościeżnicy.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Określone w rozporządzeniu odległości budynków od innych budynków, urządzeń budowlanych lub granicy działki budowlanej mierzy się w poziomie w miejscu ich najmniejszego oddalenia.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Dla budynków istniejących dopuszcza się przyjmowanie odległości, o których mowa w ust. 3, bez uwzględnienia grubości warstw izolacji termicznej, tynków lub okładzin zewnętrznych, przy czym nie dotyczy to ściany budynku usytuowanej bezpośrednio przy granicy działki.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							5.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Wykaz Polskich Norm powołanych w rozporządzeniu określa załącznik nr 1 do rozporządzenia.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="12" style="width:421.2pt; border-top:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							Dział&#xa0; II
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Zabudowa i zagospodarowanie działki budowlanej
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							#1
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							2
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							3
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							4
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							5
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							6
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							7
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							8
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							9
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							10
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							11
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							12
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="10" style="width:349.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							Rozdział&#xa0; 1
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Usytuowanie budynku
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 10.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							(uchylony).
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="10" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 11.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Warunki techniczne budynków z pomieszczeniami przeznaczonymi na pobyt ludzi; uciążliwości]
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Budynek z pomieszczeniami przeznaczonymi na pobyt ludzi powinien być wznoszony poza zasięgiem zagrożeń i uciążliwości określonych w przepisach odrębnych, przy czym dopuszcza się wznoszenie budynków w tym zasięgu pod warunkiem zastosowania środków technicznych zmniejszających uciążliwości poniżej poziomu ustalonego w tych przepisach bądź zwiększających odporność budynku na te zagrożenia i uciążliwości, jeżeli nie jest to sprzeczne z warunkami ustalonymi dla obszarów ograniczonego użytkowania, określonych w przepisach odrębnych.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="8" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Do uciążliwości, o których mowa w ust. 1, zalicza się w szczególności:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							szkodliwe promieniowanie i oddziaływanie pól elektromagnetycznych;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							hałas i drgania (wibracje);
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							zanieczyszczenie powietrza;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							zanieczyszczenie gruntu i wód;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							5)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							powodzie i zalewanie wodami opadowymi;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							6)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							osuwiska gruntu, lawiny skalne i śnieżne;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							7)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							szkody spowodowane działalnością górniczą.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="18" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 12.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Odległość od granicy z sąsiednią działką budowlaną]
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="3" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Jeżeli z przepisów § 13, 19, 23, 36, 40, 60 i 271-273 lub przepisów odrębnych określających dopuszczalne odległości niektórych budowli od budynków nie wynikają inne wymagania, budynek na działce budowlanej należy sytuować od granicy tej działki w odległości nie mniejszej niż:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4 m - w przypadku budynku zwróconego ścianą z oknami lub drzwiami w stronę tej granicy;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3 m - w przypadku budynku zwróconego ścianą bez okien i drzwi w stronę tej granicy.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Sytuowanie budynku w przypadku, o którym mowa w ust. 1 pkt 2, dopuszcza się w odległości 1,5 m od granicy lub bezpośrednio przy tej granicy, jeżeli plan miejscowy przewiduje taką możliwość.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Dopuszcza się, uwzględniając przepisy odrębne oraz przepisy § 13, 19, 23, 36, 40, 60 i 271-273, sytuowanie budynku bezpośrednio przy granicy działki budowlanej, jeżeli będzie on przylegał swoją ścianą do ściany budynku istniejącego na sąsiedniej działce oraz jego wysokość będzie zgodna z obowiązującym na danym terenie planem miejscowym lub decyzją o warunkach zabudowy i zagospodarowania terenu.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="4" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							W zabudowie jednorodzinnej i zagrodowej, uwzględniając przepisy odrębne oraz przepisy § 13, 19, 23, 36, 40, 60 i 271-273, dopuszcza się:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budowę budynku ścianą bez okien i drzwi bezpośrednio przy granicy działki budowlanej lub w odległości mniejszej niż określona w ust. 1 pkt 2, lecz nie mniejszej niż 1,5 m, na działce budowlanej o szerokości 16 m lub mniejszej;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							nadbudowę budynku istniejącego, usytuowanego w odległości mniejszej niż określona w ust. 1 od granicy tej działki budowlanej, o nie więcej niż jedną kondygnację, przy czym w nadbudowanej ścianie, zlokalizowanej w odległości mniejszej niż 4 m od granicy, nie może być okien i drzwi;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							budowę budynku gospodarczego lub garażu o długości nie większej niż 6,5 m i wysokości nie większej niż 3 m bezpośrednio przy granicy działki budowlanej lub w odległości nie mniejszej niż 1,5 m ścianą bez okien i drzwi.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							5.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Usytuowanie budynku na działce budowlanej w sposób, o którym mowa w ust. 2-4, powoduje objęcie sąsiedniej działki obszarem oddziaływania obiektu w rozumieniu art. 3 pkt 20 ustawy z dnia 7 lipca 1994 r. - Prawo budowlane.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="3" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							6.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Odległość od granicy działki budowlanej nie może być mniejsza niż:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1,5 m do okapu lub gzymsu zwróconego w stronę tej granicy, a także do balkonu, daszku nad wejściem, galerii, tarasu, schodów zewnętrznych, rampy lub pochylni - z wyjątkiem pochylni przeznaczonych dla osób niepełnosprawnych;
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4 m do okna umieszczonego w dachu zwróconego w stronę tej granicy.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							7.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							W przypadkach, o których mowa w ust. 2 i 4, dopuszcza się zmniejszenie odległości okapu zwróconego w stronę granicy działki budowlanej do 1 m.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							8.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Budynek inwentarski lub budynek gospodarczy, uwzględniając przepisy odrębne oraz zawarte w § 13, 60 i 271-273, nie może być sytuowany ścianą z oknami lub drzwiami w odległości mniejszej niż 8 m od ściany istniejącego na sąsiedniej działce budowlanej budynku mieszkalnego, budynku zamieszkania zbiorowego lub budynku użyteczności publicznej, lub takiego, dla którego istnieje ostateczna decyzja o pozwoleniu na budowę, z zastrzeżeniem ust. 4 pkt 3.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							9.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Odległości podziemnej części budynku, a także budowli podziemnej spełniającej funkcje użytkowe budynku, znajdujących się całkowicie poniżej poziomu otaczającego terenu, od granicy działki budowlanej nie ustala się.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							10.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Zachowanie odległości, o których mowa w ust. 1-9, nie jest wymagane w przypadku, gdy sąsiednia działka jest działką drogową.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="9" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 13.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Naturalne oświetlenie pomieszczeń]
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="5" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Odległość budynku z pomieszczeniami przeznaczonymi na pobyt ludzi od innych obiektów powinna umożliwiać naturalne oświetlenie tych pomieszczeń - co uznaje się za spełnione, jeżeli:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="3" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							między ramionami kąta 60°, wyznaczonego w płaszczyźnie poziomej, z wierzchołkiem usytuowanym w wewnętrznym licu ściany na osi okna pomieszczenia przesłanianego, nie znajduje się przesłaniająca część tego samego budynku lub inny obiekt przesłaniający w odległości mniejszej niż:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							a)
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							wysokość przesłaniania - dla obiektów przesłaniających o wysokości do 35 m,
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							b)
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							35 m - dla obiektów przesłaniających o wysokości ponad 35 m,
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2)
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							zostały zachowane wymagania, o których mowa w § 57 i 60.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							2.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Wysokość przesłaniania, o której mowa w ust. 1 pkt 1, mierzy się od poziomu dolnej krawędzi najniżej położonych okien budynku przesłanianego do poziomu najwyższej zacieniającej krawędzi obiektu przesłaniającego lub jego przesłaniającej części.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							3.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Dopuszcza się sytuowanie obiektu przesłaniającego w odległości nie mniejszej niż 10 m od okna pomieszczenia przesłanianego, takiego jak maszt, komin, wieża lub inny obiekt budowlany, bez ograniczenia jego wysokości, lecz o szerokości przesłaniającej nie większej niż 3 m, mierząc ją równolegle do płaszczyzny okna.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							4.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Odległości, o których mowa w ust. 1 pkt 1, mogą być zmniejszone nie więcej niż o połowę w zabudowie śródmiejskiej.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							#1
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							2
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							3
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							4
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							5
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							6
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							7
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							8
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							9
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							10
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							11
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							12
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="10" style="width:349.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							Rozdział&#xa0; 2
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td colspan="3" style="width:97.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Dojścia i dojazdy
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td rowspan="2" style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							§&#xa0; 14.
+						</p>
+					</td>
+					<td colspan="7" style="width:241.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							[Zapewnienie dojścia i dojazdu do drogi publicznej, działek budowlanych]
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:25.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							1.
+						</p>
+					</td>
+					<td colspan="5" style="width:169.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p>
+							Do działek budowlanych oraz do budynków i urządzeń z nimi związanych należy zapewnić dojście i dojazd umożliwiający dostęp do drogi publicznej, odpowiednie do przeznaczenia i sposobu ich użytkowania oraz wymagań dotyczących ochrony przeciwpożarowej, określonych w przepisach odrębnych. Szerokość jezdni stanowiącej dojazd nie może być mniejsza niż 3 m.
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							////
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							2
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							3
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							4
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							5
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							6
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							7
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							8
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							9
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							10
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							11
+						</p>
+					</td>
+					<td style="width:25.2pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="text-align:center">
+							12
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p>
+				&#xa0;
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Konwersja do HTML za pomocą WordToHTML.net</a></p>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8417cdccbf80cc77","r":1,"version":"2023.10.0","token":"4581d6a58cf94e929fad52deda295622"}' crossorigin="anonymous"></script>
+</body>
+</html>
