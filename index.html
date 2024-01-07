@@ -38,17 +38,37 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="site1Link">Site 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="site2Link">Site 2</a>
+                </li>
                 <!-- Add more navigation items as needed -->
             </ul>
         </div>
     </nav>
 
     <!-- iFrame for Google Sheets -->
-    <iframe src="https://docs.google.com/spreadsheets/d/18nHKZ0P6YI8-zzpktrSUkzjMsQd9nE-lES7uC-HZBMk/edit#gid=0"></iframe>
+    <iframe id="googleSheetsFrame" src="https://docs.google.com/spreadsheets/d/18nHKZ0P6YI8-zzpktrSUkzjMsQd9nE-lES7uC-HZBMk/edit#gid=0"></iframe>
 
     <!-- Bootstrap JS and jQuery CDN links (required for Bootstrap functionality) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Event listener to change iframe src on clicking "Site 1"
+        document.getElementById('site1Link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            document.getElementById('googleSheetsFrame').src = 'https://docs.google.com/spreadsheets/d/18nHKZ0P6YI8-zzpktrSUkzjMsQd9nE-lES7uC-HZBMk/edit#gid=0'; // Change iframe src to Site 1
+        });
+
+        // Event listener to change iframe src on clicking "Site 2"
+        document.getElementById('site2Link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            document.getElementById('googleSheetsFrame').src = 'https://docs.google.com/spreadsheets/d/1yZ26kRwQfb2H70sihdbzRrSCqNSdLx36i6-xSNbbxek/edit#gid=0'; // Change iframe src to Site 2
+        });
+    </script>
 </body>
 </html>
